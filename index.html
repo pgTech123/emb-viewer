@@ -1,0 +1,21 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>EMB reader</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header><h1>EMB reader</h1><span>Wilcom .emb: preview, threads, metadata</span></header>
+<main>
+  <div id="drop" class="drop">
+    <p>Drop one or more <b>.emb</b> files here, or <label class="btn">browse<input type="file" id="file" accept=".emb,.EMB" multiple hidden></label></p>
+  </div>
+  <div id="results"></div>
+</main>
+<script src="ole.js"></script>
+<script src="emb.js"></script>
+<script src="app.js"></script>
+</body>
+</html>
