@@ -28,6 +28,16 @@ async function show(file) {
   }
 }
 
+// Sample is embedded as base64 (sample.js) so it also works from file://.
+if (window.SAMPLE_EMB) {
+  document.getElementById("sampleWrap").hidden = false;
+  document.getElementById("sample").addEventListener("click", () => {
+    const bin = atob(window.SAMPLE_EMB.base64);
+    const bytes = Uint8Array.from(bin, (c) => c.charCodeAt(0));
+    show(new File([bytes], window.SAMPLE_EMB.name));
+  });
+}
+
 const handle = (files) => [...files].forEach(show);
 input.addEventListener("change", () => handle(input.files));
 ["dragenter", "dragover"].forEach((e) => drop.addEventListener(e, (ev) => { ev.preventDefault(); drop.classList.add("over"); }));

@@ -10,12 +10,13 @@
 <header><h1>EMB reader</h1><span>Wilcom .emb: preview, threads, metadata</span></header>
 <main>
   <div id="drop" class="drop">
-    <p>Drop one or more <b>.emb</b> files here, or <label class="btn">browse<input type="file" id="file" accept=".emb,.EMB" multiple hidden></label></p>
+    <p>Drop one or more <b>.emb</b> files here, or <label class="btn">browse<input type="file" id="file" accept=".emb,.EMB" multiple hidden></label><span id="sampleWrap" hidden> or <button id="sample" class="btn" type="button">load sample</button></span></p>
   </div>
   <div id="results"></div>
 </main>
 <script src="ole.js"></script>
 <script src="emb.js"></script>
+<script src="sample.js" onerror="void 0"></script>
 <script src="app.js"></script>
 </body>
 </html>

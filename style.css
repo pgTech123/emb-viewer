@@ -25,3 +25,4 @@ td.num, th.num { text-align:right; font-variant-numeric:tabular-nums; }
 dl { display:grid; grid-template-columns:auto 1fr; gap:2px 12px; margin:12px 0 0; font-size:13px; }
 dt { color:var(--mut); }
 .err { color:#c0392b; }
+button.btn { background:none; border:0; font:inherit; padding:0; }
