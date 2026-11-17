@@ -4,7 +4,9 @@ Browser-based Wilcom `.emb` reader. Drop a file to see its preview, thread colou
 
 ## Use
 
-Open `index.html` in a browser (or the GitHub Pages site) and drop one or more `.emb` files on the page.
+**Live demo: https://pgtech123.github.io/emb-viewer/**
+
+Or open `index.html` in a browser and drop one or more `.emb` files on the page.
 
 ## What it reads
 
